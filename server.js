@@ -1,5 +1,5 @@
 /**
- * 🚀 PROOT UBUNTU 22.04 LIVE CONTAINER ENGINE (COLOR RENDERER FIX)
+ * 🚀 PROOT UBUNTU 22.04 LIVE CONTAINER ENGINE (NEON CLASSGLASS DESIGN V2)
  * 👤 User: ImGunpoint
  * 🛠️ Made by: Gemini AI & ImGunpoint
  */
@@ -130,65 +130,296 @@ async function initializeEnvironment() {
 }
 
 // ============================================================================
-// 🖥️ EMBEDDED WEB INTERFACE VIEWPORT (WITH REAL INTERACTIVE ANSI COLOR PARSER)
+// 🖥️ EMBEDDED WEB INTERFACE VIEWPORT (THE ULTIMATE GLASS CYBERPUNK THEME)
 // ============================================================================
 const htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ImGunpoint Shell Stream</title>
+    <title>ImGunpoint Ultra Premium Shell</title>
     <style>
-        body { background-color: #0f141c; color: #e6edf3; font-family: monospace; padding: 25px; margin: 0; }
-        .wrapper { max-width: 1200px; margin: 0 auto; }
-        .branding { border-bottom: 1px solid #30363d; padding-bottom: 12px; margin-bottom: 20px; }
-        .highlight { color: #2f81f7; font-weight: bold; }
-        #terminal { background-color: #010409; border: 1px solid #30363d; border-radius: 6px; padding: 18px; height: 65vh; overflow-y: auto; white-space: pre-wrap; font-size: 14px; line-height: 1.4; color: #e6edf3; }
-        .input-area { margin-top: 15px; display: flex; background-color: #010409; border: 1px solid #30363d; border-radius: 6px; padding: 10px; }
-        .prompt { color: #56d364; margin-right: 10px; user-select: none; }
-        #cmd-input { flex: 1; background: transparent; border: none; color: #e6edf3; font-family: monospace; font-size: 14px; outline: none; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            background: radial-gradient(circle at 10% 20%, #0d0e15 0%, #050508 90%);
+            color: #e2e8f0; 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            padding: 40px 20px; 
+            margin: 0; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient Glowing Background Orbs */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(47, 129, 247, 0.15) 0%, rgba(0,0,0,0) 70%);
+            top: -100px;
+            right: -50px;
+            z-index: 0;
+            pointer-events: none;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(86, 211, 100, 0.08) 0%, rgba(0,0,0,0) 70%);
+            bottom: -150px;
+            left: -100px;
+            z-index: 0;
+            pointer-events: none;
+        }
         
-        /* Native ANSI Terminal Linux Color Matrix Definitions */
-        .ansi-black { color: #2e3436; }
-        .ansi-red { color: #cc0000; }
-        .ansi-green { color: #4e9a06; }
-        .ansi-yellow { color: #c4a000; }
-        .ansi-blue { color: #3465a4; }
-        .ansi-magenta { color: #75507b; }
-        .ansi-cyan { color: #06989a; }
-        .ansi-white { color: #d3d7cf; }
-        .ansi-bright-black { color: #555753; font-weight: bold; }
-        .ansi-bright-red { color: #ef2929; font-weight: bold; }
-        .ansi-bright-green { color: #8ae234; font-weight: bold; }
-        .ansi-bright-yellow { color: #fce94f; font-weight: bold; }
-        .ansi-bright-blue { color: #729fcf; font-weight: bold; }
-        .ansi-bright-magenta { color: #ad7fa8; font-weight: bold; }
-        .ansi-bright-cyan { color: #34e2e2; font-weight: bold; }
-        .ansi-bright-white { color: #eeeeec; font-weight: bold; }
-        .ansi-bold { font-weight: bold; }
+        .wrapper { 
+            width: 100%;
+            max-width: 1100px; 
+            margin: 0 auto; 
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Core Premium Frost Glass Container */
+        .glass-panel {
+            background: rgba(13, 16, 27, 0.45);
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 28px;
+            padding: 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .branding { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .branding h2 {
+            margin: 0;
+            font-weight: 800;
+            font-size: 1.6rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .operator-tag {
+            font-weight: 700;
+            font-size: 0.9rem;
+            background: rgba(47, 129, 247, 0.12);
+            color: #70a5f9;
+            padding: 8px 16px;
+            border-radius: 100px;
+            border: 1px solid rgba(47, 129, 247, 0.25);
+            box-shadow: 0 0 15px rgba(47, 129, 247, 0.1);
+            letter-spacing: 0.3px;
+        }
+
+        .highlight { 
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        /* Hyper-Styled Action Control Bar */
+        .controls {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.88rem;
+            padding: 12px 24px;
+            border-radius: 18px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-cancel {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+        }
+
+        .btn-cancel:hover {
+            background: #ef4444;
+            color: #ffffff;
+            border-color: #ef4444;
+            box-shadow: 0 0 25px rgba(239, 68, 68, 0.45);
+            transform: translateY(-2px);
+        }
+
+        .btn-restart {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: rgba(245, 158, 11, 0.2);
+            color: #fde047;
+        }
+
+        .btn-restart:hover {
+            background: #f59e0b;
+            color: #000000;
+            border-color: #f59e0b;
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);
+            transform: translateY(-2px);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* Main Glass Console Port */
+        #terminal { 
+            background: rgba(5, 6, 10, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 22px; 
+            padding: 24px; 
+            height: 55vh; 
+            overflow-y: auto; 
+            white-space: pre-wrap; 
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14.5px; 
+            line-height: 1.6; 
+            color: #cbd5e1; 
+            box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Glass Input Execution Unit */
+        .input-area { 
+            margin-top: 20px; 
+            display: flex; 
+            align-items: center;
+            background: rgba(5, 6, 10, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 18px; 
+            padding: 16px 22px; 
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .input-area:focus-within {
+            border-color: rgba(47, 129, 247, 0.4);
+            box-shadow: 0 0 20px rgba(47, 129, 247, 0.15), inset 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .prompt { 
+            color: #4ade80; 
+            margin-right: 14px; 
+            user-select: none; 
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(74, 222, 128, 0.25);
+        }
+
+        #cmd-input { 
+            flex: 1; 
+            background: transparent; 
+            border: none; 
+            color: #f8fafc; 
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14.5px; 
+            outline: none; 
+            font-weight: 600;
+        }
+        
+        /* Ultra Sleek Smooth Webkit Scrollbars */
+        #terminal::-webkit-scrollbar {
+            width: 10px;
+        }
+        #terminal::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        #terminal::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            border: 2px solid rgba(5, 6, 10, 0.85);
+        }
+        #terminal::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Native Linux System ANSI Color Mapping Layer Matrix */
+        .ansi-black { color: #1e293b; }
+        .ansi-red { color: #f87171; }
+        .ansi-green { color: #4ade80; }
+        .ansi-yellow { color: #facc15; }
+        .ansi-blue { color: #60a5fa; }
+        .ansi-magenta { color: #c084fc; }
+        .ansi-cyan { color: #22d3ee; }
+        .ansi-white { color: #e2e8f0; }
+        .ansi-bright-black { color: #64748b; font-weight: 700; }
+        .ansi-bright-red { color: #ef4444; font-weight: 700; text-shadow: 0 0 8px rgba(239,68,68,0.3); }
+        .ansi-bright-green { color: #22c55e; font-weight: 700; text-shadow: 0 0 8px rgba(34,197,94,0.3); }
+        .ansi-bright-yellow { color: #eab308; font-weight: 700; text-shadow: 0 0 8px rgba(234,179,8,0.3); }
+        .ansi-bright-blue { color: #3b82f6; font-weight: 700; text-shadow: 0 0 8px rgba(59,130,246,0.3); }
+        .ansi-bright-magenta { color: #a855f7; font-weight: 700; text-shadow: 0 0 8px rgba(168,85,247,0.3); }
+        .ansi-bright-cyan { color: #06b6d4; font-weight: 700; text-shadow: 0 0 8px rgba(6,182,212,0.3); }
+        .ansi-bright-white { color: #ffffff; font-weight: 700; }
+        .ansi-bold { font-weight: 700; }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="branding">
-            <h2>📦 Ubuntu 22.04 Workspace Shell Instance</h2>
-            <div>Host Operator: <span class="highlight">ImGunpoint</span></div>
-        </div>
-        <div id="terminal"></div>
-        
-        <div class="input-area">
-            <span class="prompt">root@ubuntu:~#</span>
-            <input type="text" id="cmd-input" placeholder="Type a command and hit Enter..." autofocus autocomplete="off">
+        <div class="glass-panel">
+            <div class="branding">
+                <h2>⚡ Ubuntu 22.04 Live Execution Matrix</h2>
+                <div class="operator-tag">SYSTEM OPERATOR: <span class="highlight">ImGunpoint</span></div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-cancel" id="btn-ctrl-c">🛑 Kill Process (Ctrl+C)</button>
+                <button class="btn btn-restart" id="btn-restart">🔄 Reboot Core Workspace</button>
+            </div>
+
+            <div id="terminal"></div>
+            
+            <div class="input-area">
+                <span class="prompt">root@ubuntu:~#</span>
+                <input type="text" id="cmd-input" placeholder="Transmit shell parameters to micro-engine..." autofocus autocomplete="off">
+            </div>
         </div>
     </div>
 
     <script>
         const term = document.getElementById('terminal');
         const input = document.getElementById('cmd-input');
+        const btnCtrlC = document.getElementById('btn-ctrl-c');
+        const btnRestart = document.getElementById('btn-restart');
+        
         const proto = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
         const ws = new WebSocket(proto + window.location.host);
 
-        // Client-side ANSI to HTML Token Parser Engine
+        // Advanced ANSI Decoder Layer Architecture
         function parseAnsi(text) {
             const ansiMap = {
                 '30': 'ansi-black', '31': 'ansi-red', '32': 'ansi-green', '33': 'ansi-yellow',
@@ -198,7 +429,6 @@ const htmlContent = `
                 '1': 'ansi-bold'
             };
 
-            // Break raw lines apart to prevent streaming overlap errors
             let cleanHTML = "";
             let segments = text.split(/\\x1B\\[|\\e\\[/);
 
@@ -225,24 +455,46 @@ const htmlContent = `
         }
 
         ws.onopen = () => {
-            term.innerHTML += '<span class="ansi-green">[System]: Secure pipeline bridged. Terminal Ready.</span><br>';
+            term.innerHTML += '<span class="ansi-bright-green">[SYSTEM]: Quantum data bridge built. Virtual terminal ready for active inputs.</span><br>';
         };
 
         ws.onmessage = (e) => {
-            term.innerHTML += parseAnsi(e.data);
-            term.scrollTop = term.scrollHeight;
+            try {
+                const data = JSON.parse(e.data);
+                if (data.type === 'sys_action' && data.body === 'reload') {
+                    window.location.reload();
+                }
+            } catch(err) {
+                term.innerHTML += parseAnsi(e.data);
+                term.scrollTop = term.scrollHeight;
+            }
         };
 
         ws.onclose = () => {
-            term.innerHTML += '<span class="ansi-red"><br>[System]: Remote session closed. Terminal instance destroyed.</span><br>';
+            term.innerHTML += '<span class="ansi-bright-red"><br>[CRITICAL]: Pipeline sync dropped. Backend subsystem destroyed.</span><br>';
             input.disabled = true;
+            btnCtrlC.disabled = true;
+            btnRestart.disabled = true;
         };
 
         input.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 const command = input.value;
-                ws.send(command + '\\n'); 
+                ws.send(JSON.stringify({ type: 'cmd', data: command + '\\n' })); 
                 input.value = '';
+            }
+        });
+
+        btnCtrlC.addEventListener('click', (e) => {
+            e.stopPropagation();
+            ws.send(JSON.stringify({ type: 'action', action: 'SIGINT' }));
+            input.focus();
+        });
+
+        btnRestart.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(confirm("Are you certain you want to trigger an environment wrapper cold reboot?")) {
+                ws.send(JSON.stringify({ type: 'action', action: 'RESTART' }));
             }
         });
 
@@ -291,34 +543,66 @@ wss.on('connection', (ws) => {
         return;
     }
 
-    const bashEnv = spawn(PROOT_PATH, args, {
+    let bashEnv = spawn(PROOT_PATH, args, {
         env: { 
             ...process.env, 
-            TERM: 'xterm-color', // Set terminal type to force system to output ANSI styling strings
+            TERM: 'xterm-color', 
             HOME: '/root',
             PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
         }
     });
 
+    const bindStreams = (proc) => {
+        proc.stdout.on('data', (data) => {
+            if (ws.readyState === WebSocket.OPEN) ws.send(data.toString());
+        });
+
+        proc.stderr.on('data', (data) => {
+            if (ws.readyState === WebSocket.OPEN) ws.send(data.toString());
+        });
+
+        proc.on('close', (code) => {
+            if (ws.readyState === WebSocket.OPEN && code !== null) {
+                ws.send(`\n\x1B[31m[Process exited with status framework code: ${code}]\x1B[0m\n`);
+            }
+        });
+    };
+
+    bindStreams(bashEnv);
     ws.send("\x1B[92mEnvironment booted successfully. Upgraded to Ubuntu 22.04 LTS Framework with ANSI color enhancements active.\x1B[0m\n\n");
 
     ws.on('message', (message) => {
-        if (bashEnv.stdin.writable) {
-            bashEnv.stdin.write(message.toString());
-        }
-    });
-
-    bashEnv.stdout.on('data', (data) => {
-        if (ws.readyState === WebSocket.OPEN) ws.send(data.toString());
-    });
-
-    bashEnv.stderr.on('data', (data) => {
-        if (ws.readyState === WebSocket.OPEN) ws.send(data.toString());
-    });
-
-    bashEnv.on('close', (code) => {
-        if (ws.readyState === WebSocket.OPEN) {
-            ws.send(`\n\x1B[31m[Process exited with status framework code: ${code}]\x1B[0m\n`);
+        try {
+            const parsed = JSON.parse(message.toString());
+            
+            if (parsed.type === 'cmd') {
+                if (bashEnv.stdin.writable) {
+                    bashEnv.stdin.write(parsed.data);
+                }
+            } else if (parsed.type === 'action') {
+                if (parsed.action === 'SIGINT') {
+                    log('info', 'Transmission of SigInt (Ctrl+C) manual override triggered.');
+                    bashEnv.kill('SIGINT');
+                } else if (parsed.action === 'RESTART') {
+                    log('warning', 'Hot re-instantiation request caught. Restarting runtime environment wrapper...');
+                    bashEnv.kill();
+                    
+                    bashEnv = spawn(PROOT_PATH, args, {
+                        env: { 
+                            ...process.env, 
+                            TERM: 'xterm-color', 
+                            HOME: '/root',
+                            PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+                        }
+                    });
+                    bindStreams(bashEnv);
+                    ws.send(JSON.stringify({ type: 'sys_action', body: 'reload' }));
+                }
+            }
+        } catch (e) {
+            if (bashEnv.stdin.writable) {
+                bashEnv.stdin.write(message.toString());
+            }
         }
     });
 
