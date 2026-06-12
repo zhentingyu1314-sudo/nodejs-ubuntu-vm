@@ -11,7 +11,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 const WebSocket = require('ws');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 7860;
 
 // System Paths
 const BIN_DIR = path.join(__dirname, 'bin');
