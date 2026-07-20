@@ -1,18 +1,8 @@
-version: "3.8"
-
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: node-ubuntu-vm
-    restart: unless-stopped
+    image: node:18-alpine  # 或者您在 Docker Hub 上建立好的映像檔名稱
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
-    volumes:
-      - .:/app
-      - /app/node_modules
-    working_dir: /app
+      NODE_ENV: "production"
     command: node server.js
